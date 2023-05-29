@@ -1,0 +1,53 @@
+/* styles for desktop view */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    display: flex;
+  }
+  
+  .nav-link {
+    margin-left: 20px;
+  }
+  
+  /* styles for mobile view */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .nav-link {
+      margin: 10px 0;
+    }
+  
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+      font-size: 30px;
+      margin-right: 20px;
+    }
+  
+    .menu-icon:hover {
+      color: #555;
+    }
+  
+    .menu-icon.active {
+      color: #000;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  }
+  

@@ -1,0 +1,293 @@
+/* * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(to right, #008000, #00e600, #b3ffb3, #00e600, #008000);
+	font-family: 'Martel Sans', sans-serif;
+} */
+
+h1 {
+	font-size: 5.25vmin;
+	text-align: center;
+	color: white;
+}
+p {
+	font-size: max(10pt, 2.5vmin);
+	line-height: 1.4;
+	color: #0e390e;
+	margin-bottom: 1.5rem;
+}
+
+.wrap {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 85vmin;
+	height: 25em;
+	border: 8px solid;
+	border-image: linear-gradient(-50deg, green, #00b300, forestgreen, green, lightgreen, #00e600, green) 1;
+	margin: 2rem auto;
+	transition: .3s ease-in-out;
+	position: relative;
+	overflow: hidden;
+}
+.overlay {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	padding: 1rem .75rem;
+	
+    background-image: url("https://tse2.mm.bing.net/th?id=OIP.M6rJEmN1aOoKIZ_PHc4m5gHaEK&pid=Api&P=0");
+	transition: .4s ease-in-out;
+	z-index: 1;
+}
+.overlay-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 15vmin;
+	height: 100%;
+	padding: .5rem 0 0 .5rem;
+	border: 3px solid;
+	border-image: 
+    	linear-gradient(
+      	to bottom, 
+      	#AEA724 5%,
+      	forestgreen 35% 65%,
+      	#AEA724 95%
+    	) 0 0 0 100%;
+	transition: .3s ease-in-out .2s;
+	z-index: 1;
+}
+.image-content {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60vmin;
+	height: 100%;
+	/* background-image: url("https://tse2.mm.bing.net/th?id=OIP.M6rJEmN1aOoKIZ_PHc4m5gHaEK&pid=Api&P=0"); */
+	background-size: cover;
+	transition: .3s ease-in-out;
+	border: 1px solid green;
+}
+
+.dots {
+	position: absolute;
+	bottom: 1rem;
+	right: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 55px;
+	height: 4vmin;
+	transition: .3s ease-in-out .3s;
+}
+.dot {
+	width: 14px;
+	height: 14px;
+	background: yellow;
+	border: 1px solid indigo;
+	border-radius: 50%;
+	transition: .3s ease-in-out .3s;
+}
+
+.text {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60vmin;
+	height: 100%;
+	padding: 3vmin 4vmin;
+	background: #fff;
+	box-shadow: inset 1px 1px 15px 0 rgba(0 0 0 / .4);
+	overflow-y: scroll;
+}
+
+.wrap:hover .overlay
+ {
+	transform: translateX(-60vmin);
+}
+.wrap:hover .image-content {
+	width: 30vmin;
+}
+.wrap:hover .overlay-content {
+	border: none;
+	transition-delay: .2s;
+	transform: translateX(60vmin);
+}
+.wrap:hover .dots {
+	transform: translateX(1rem);
+}
+.wrap:hover .dots .dot {
+	background: white;
+}
+
+
+/* Animations and timing delays */
+.animate {
+  animation-duration: 0.7s;
+  animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+  animation-fill-mode: backwards;
+}
+/* Pop In */
+.pop { animation-name: pop; }
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+body{margin-top:20px;}
+
+.car9-big-shadow {
+    max-width: 320px;
+    position: relative;
+}
+
+.coloured-cards .car9 {
+    margin-top: 30px;
+}
+
+.car9[data-radius="none"] {
+    border-radius: 0px;
+}
+.car9 {
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
+    background-color: #FFFFFF;
+    color: #252422;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.car9[data-radius="none"][data-background="image"] .title, .car9[data-background="image"] .stats, .car9[data-background="image"] .category, .car9[data-background="image"] .description, .car9[data-background="image"] .content, .car9[data-background="image"] .car9-footer, .car9[data-background="image"] small, .car9[data-background="image"] .content a, .car9[data-background="color"] .title, .car9[data-background="color"] .stats, .car9[data-background="color"] .category, .car9[data-background="color"] .description, .car9[data-background="color"] .content, .car9[data-background="color"] .car9-footer, .car9[data-background="color"] small, .car9[data-background="color"] .content a {
+    color: #FFFFFF;
+}
+.car9.car9-just-text .content {
+    padding: 50px 65px;
+    text-align: center;
+}
+.car9 .content {
+    padding: 20px 20px 10px 20px;
+}
+.car9[data-color="blue"] .category {
+    color: #7a9e9f;
+}
+
+.car9 .category, .car9 .label {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.car9-big-shadow:before {
+    background-image: url("http://static.tumblr.com/i21wc39/coTmrkw40/shadow.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    bottom: -12%;
+    content: "";
+    display: block;
+    left: -12%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+
+h6, .h6 {
+	text-decoration: underline;
+    font-size: 0.9em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.car9 .description {
+    font-size: 16px;
+    color: #66615b;
+}
+.content-car9{
+    margin-top:30px;    
+}
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+/*======== COLORS ===========*/
+.car9[data-color="blue"] {
+    background: #b8d8d8;
+}
+.car9[data-color="blue"] .description {
+    color: #506568;
+}
+
+.car9[data-color="green"] {
+    background: #d5e5a3;
+}
+.car9[data-color="green"] .description {
+    color: #60773d;
+}
+.car9[data-color="green"] .category {
+    color: #92ac56;
+}
+
+.car9[data-color="yellow"] {
+    background: #ffe28c;
+}
+.car9[data-color="yellow"] .description {
+    color: #b25825;
+}
+.car9[data-color="yellow"] .category {
+    color: #d88715;
+}
+
+.car9[data-color="brown"] {
+    background: #d6c1ab;
+}
+.car9[data-color="brown"] .description {
+    color: #75442e;
+}
+.car9[data-color="brown"] .category {
+    color: #a47e65;
+}
+
+.car9[data-color="purple"] {
+    background: #baa9ba;
+}
+.car9[data-color="purple"] .description {
+    color: #3a283d;
+}
+.car9[data-color="purple"] .category {
+    color: #5a283d;
+}
+
+.car9[data-color="orange"] {
+    background: #ff8f5e;
+}
+.car9[data-color="orange"] .description {
+    color: #772510;
+}
+.car9[data-color="orange"] .category {
+    color: #e95e37;
+}
+.containerbootstrapsnippetsbootdeys{
+	background-color: #fff;
+
+}
+
+
+
+
+/* CSS */

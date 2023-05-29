@@ -1,0 +1,128 @@
+/* Small devices (phones, 576px and up) */
+@media (min-width: 576px) { 
+    .tosign {
+      font-size: 2rem;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) { 
+    .container-sign {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) { 
+    .container-sign{
+      max-width: 700px;
+    }
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) { 
+    .container-sign {
+      max-width: 900px;
+      flex-direction: column;
+    }
+  }
+  
+  /* Responsive for inputs */
+  @media (max-width: 768px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  
+  @media (max-width: 576px) {
+    btnfillnfill {
+      width: 100%;
+      font-size: 1.2rem;
+    }
+}
+   
+
+  
+  .form1 {
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(70,252,202,0.4929621506805847) 58%);
+    width: 100%;
+    max-width: 400px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .for-group {
+    margin-bottom: 1rem;
+  }
+  
+  .for-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .for-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .for-checkbox {
+    margin-top: 1rem;
+  }
+  
+  .for-btnfill  
+  {  display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .for-btnfillver {
+    background-color: #0069d9;
+  }
+  .singn{
+    color: #D9AFD9;
+    font-family: cursive;
+  }
+  .for-check-label{
+    color: darkslateblue;
+    font-family: cursive;
+  }
+  .container-sign{
+
+    
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+  }
+  .btnfill{
+    background-color: #D9AFD9;
+
+
+    width:150px;
+    height: 60px;
+    border-radius: 20px;
+
+  }
+
+
+
